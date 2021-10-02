@@ -36,4 +36,5 @@ For questionary and fire to work, you must type in git bash/power-shell/comand-l
 
 ---
 
-## h
+## Usage
+
