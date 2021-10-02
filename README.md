@@ -11,7 +11,18 @@ It has already implemented functions to load and save CSV files.
 
 ---
 
+## Installation Guide
+Installation of Python, gitbash for windows users, questionary, and fire. It was tested on Python 3.8.3.
 
+**Check:** 
+- [Python](https://www.python.org/downloads/)
+- [Gitbash](https://gitforwindows.org/)
 
+For questionary and fire to work, you must type in git bash/power-shell/comand-line or mac terminal:
 
+> pip install questionary
+
+> pip install fire
+
+---
 
