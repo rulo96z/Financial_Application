@@ -24,5 +24,16 @@ For questionary and fire to work, you must type in git bash/power-shell/comand-l
 
 > pip install fire
 
+**Documentation Links:**
+
+- [Pathlib](https://docs.python.org/3/library/pathlib.html)
+
+- [Questionary](https://pypi.org/project/questionary/)
+
+- [Sys](https://docs.python.org/3/library/sys.html)
+
+- [Fire](https://google.github.io/python-fire/guide/)
+
 ---
 
+## h
