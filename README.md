@@ -39,7 +39,7 @@ For questionary and fire to work, you must type in git bash/power-shell/comand-l
 ## Usage
 We need to input the csv_file, as in the following example:
 
-![](https://github.com/rulo96z/Financial_Application/blob/master/pics/cvs_file_pic.png)
+![](https://github.com/rulo96z/Financial_Application/blob/master/pics/cvs_file_pic.png?raw=true)
 
 The git-bash, command-line or power-shell can run this app program with the following code line: 
 
@@ -49,7 +49,7 @@ As we can see all this line is doing is calling python and inputting the name of
 
 In the following example we can see some usage functionality: 
 
-![](https://github.com/rulo96z/Financial_Application/blob/master/pics/example-of-use.png)
+![](https://github.com/rulo96z/Financial_Application/blob/master/pics/example-of-use.png?raw=true)
 
 ---
 ## Contributors
