@@ -126,6 +126,18 @@ def save_qualifying_loans(qualifying_loans):
     # Asks user where to save and locate the directory from the path entered.
     csvpath = questionary.text("Enter a file path to output the qualifying loans (.csv):").ask()
     csvpath_directory = Path(csvpath).parents[0]
+
+    # Checks if the directory exists? if not ask user if they wish to create it.
+    if not csvpath_directory.exists():
+        create_directory_query = questionary.confirm(f"Folder {csvpath_directory} does not exist. Create folder and save?").ask()
+        if create_directory_query == False:
+            sys.exit()
+        Path.mkdir(csvpath_directory)
+
+    # Saves qualifying loans in path specified and informs user.
+    csvpath = Path(csvpath)
+    save_csv(csvpath, qualifying_loans)
+    print(f"Qualifying loans information saved in {csvpath}")
     
 def run():
     """The main function for running the script."""

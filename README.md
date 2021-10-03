@@ -37,4 +37,20 @@ For questionary and fire to work, you must type in git bash/power-shell/comand-l
 ---
 
 ## Usage
+We need to input the csv_file, as in the following example:
+
+![](pics\cvs_file_pic.png)
+
+The git-bash, command-line or power-shell can run this app program with the following code line: 
+
+> ```python app.py```
+
+As we can see all this line is doing is calling python and inputting the name of the file of our application, in this case ```app.py```.
+
+In the following example we can see some usage functionality: 
+
+![](pics\example-of-use.png)
+
+---
+## Contributors
 
