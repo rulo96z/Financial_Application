@@ -29,11 +29,6 @@ from qualifier.filters.loan_to_value import filter_loan_to_value
 
 
 def load_bank_data():
-    """Ask for the file path to the latest banking data and load the CSV file.
-
-    Returns:
-        The bank data from the data rate sheet CSV file.
-    """
 
     csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
     csvpath = Path(csvpath)
@@ -44,11 +39,6 @@ def load_bank_data():
 
 
 def get_applicant_info():
-    """Prompt dialog to get the applicant's financial information.
-
-    Returns:
-        Returns the applicant's financial information.
-    """
 
     credit_score = questionary.text("What's your credit score?").ask()
     debt = questionary.text("What's your current amount of monthly debt?").ask()
@@ -66,26 +56,6 @@ def get_applicant_info():
 
 
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
-    """Determine which loans the user qualifies for.
-
-    Loan qualification criteria is based on:
-        - Credit Score
-        - Loan Size
-        - Debit to Income ratio (calculated)
-        - Loan to Value ratio (calculated)
-
-    Args:
-        bank_data (list): A list of bank data.
-        credit_score (int): The applicant's current credit score.
-        debt (float): The applicant's total monthly debt payments.
-        income (float): The applicant's total monthly income.
-        loan (float): The total loan amount applied for.
-        home_value (float): The estimated home value.
-
-    Returns:
-        A list of the banks willing to underwrite the loan.
-
-    """
 
     # Calculate the monthly debt ratio
     monthly_debt_ratio = calculate_monthly_debt_ratio(debt, income)
@@ -107,14 +77,6 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 
 def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
-    # Exits if there are no qualifying loans and informs user
     if len(qualifying_loans) == 0:
         sys.exit("There are no qualifying loans to save to file.")
     
