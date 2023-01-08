@@ -55,7 +55,7 @@ In the following example we can see some usage functionality:
 ## Contributors
 This code was shared in 2021 Education Services at UCB. 
 
-Additional updates/ uploads for usability was added by rulo.nogales@nogalesinvestments.com
+Additional updates/ uploads for usability was added by raul@nogalesfundmgmt.com
 
 ---
 
